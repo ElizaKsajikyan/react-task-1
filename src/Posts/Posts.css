@@ -1,0 +1,32 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, calc((100% - 60px) / 4));
+    gap:20px;
+    list-style: none;
+    max-width: 1400px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.card {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 100%;
+    padding: 15px;
+}
+
+.card__title {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+
+.card__link {
+    border: 1px solid #8888;
+    color: #8888;
+    border-radius: 10px;
+    text-decoration: none;
+    padding:5px 15px;
+}
