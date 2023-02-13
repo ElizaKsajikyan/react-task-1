@@ -12,6 +12,8 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     width: 100%;
     padding: 15px;
+    background: var(--background);
+    color: var(--textColor)
 }
 
 .card__title {
@@ -24,8 +26,8 @@
 }
 
 .card__link {
-    border: 1px solid #8888;
-    color: #8888;
+    border: 1px solid;
+    color: var(--textColor);
     border-radius: 10px;
     text-decoration: none;
     padding:5px 15px;

@@ -1,0 +1,23 @@
+.header {
+    padding: 15px;
+    background: var(--background);
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    place-content: center;
+    gap: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--textColor)
+}
+
+.check-theme {
+    display: flex;
+    gap: 5px;
+    place-content: center;
+    color: var(--textColor)
+}
