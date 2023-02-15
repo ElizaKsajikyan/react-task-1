@@ -1,14 +1,15 @@
 import './Header.css'
 import {Link} from "react-router-dom";
 import {useContext, useEffect} from "react";
-import ThemeContext from "../Context";
+import ThemeContext,{Themes} from "../Context";
 
 function Header({changeTheme}){
     const theme =useContext(ThemeContext);
 
     function setTheme(){
-        for(let color in theme){
-            document.body.style.setProperty(`--${color}`, theme[color])
+        const newTheme= Themes[theme]
+        for(let color in  newTheme){
+            document.body.style.setProperty(`--${color}`, newTheme[color])
         }
     }
     useEffect(()=>{

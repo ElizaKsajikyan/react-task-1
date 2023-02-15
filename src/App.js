@@ -1,5 +1,5 @@
 import {Routes, Route} from 'react-router-dom'
-import React, {useEffect, useState} from 'react'
+import React, { useState} from 'react'
 import './App.css';
 import ThemeContext from "./Context";
 import Posts from "./Posts/Posts";
@@ -8,23 +8,11 @@ import Post from "./Post/Post";
 import ToDO from "./ToDo/ToDo";
 import Header from "./Header/Header";
 
-const themes = {
-    light: {
-        background: "#343434",
-        textColor: "#eeeeee"
-    },
-    dark: {
-        background: "#ffffff",
-        textColor: "#222222"
-    }
-};
-
 function App() {
-    const [theme, setTheme] = useState(themes.light)
+    const [theme, setTheme] = useState('light')
 
     function changeTheme(val) {
-        val ? setTheme(themes.dark) : setTheme(themes.light);
-        console.log(theme);
+        val ? setTheme('dark') : setTheme('light');
     }
 
     return (
