@@ -3,8 +3,8 @@ import {Link} from "react-router-dom";
 import {useContext, useEffect} from "react";
 import ThemeContext,{Themes} from "../Context";
 
-function Header({changeTheme}){
-    const theme =useContext(ThemeContext);
+function Header(){
+    const {theme,changeTheme} =useContext(ThemeContext);
 
     function setTheme(){
         const newTheme= Themes[theme]

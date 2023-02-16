@@ -17,8 +17,8 @@ function App() {
 
     return (
         <>
-            <ThemeContext.Provider value={theme}>
-                <Header changeTheme={changeTheme}/>
+            <ThemeContext.Provider value={{theme,changeTheme}}>
+                <Header/>
                 <Routes>
                     <Route path={'/'} element={<Home/>}/>
                     <Route path={'/posts'} element={<Posts/>}>
